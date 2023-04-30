@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478530757186974763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.341, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5334471615709717253}
   - component: {fileID: 1586696514131501260}
   m_Layer: 7
-  m_Name: spaceShips_001
+  m_Name: spaceShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c5b2cf060f39ee4ca246f65be8038c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72c8f58bb22edaf4199b58866444090a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,12 +126,12 @@ GameObject:
   - component: {fileID: 7486099341221941326}
   - component: {fileID: 8299440880433731248}
   - component: {fileID: -7089619582152719574}
-  - component: {fileID: -5012018096039924465}
+  - component: {fileID: 7400609177025729327}
   - component: {fileID: 5984882351844968931}
   - component: {fileID: -1935236511177832336}
   - component: {fileID: 1346562950442218440}
   m_Layer: 7
-  m_Name: Enemy 0
+  m_Name: EnemyScout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,8 +187,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &-5012018096039924465
-CircleCollider2D:
+--- !u!61 &7400609177025729327
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -201,8 +201,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 0.64, y: 1.01}
+  m_EdgeRadius: 0
 --- !u!114 &5984882351844968931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,8 +251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8ef06a8e0f5ad489aec70af63d1ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 8389082238308173574, guid: 81bc79ffef6ed314f95ed45cac477c5e, type: 3}
-  projectileSpeed: 10
+  projectilePrefab: {fileID: 8389082238308173574, guid: d464020f9423f1646b37bb41830975bb, type: 3}
+  projectileSpeed: 15
   projectileLifeTime: 5
   baseFiringRate: 1
   firingRateVariance: 0.5

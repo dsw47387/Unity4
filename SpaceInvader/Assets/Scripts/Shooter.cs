@@ -49,7 +49,7 @@ public class Shooter : MonoBehaviour
         }
         if (gunLeft && gunRight)
         {
-            gunConfigurations[1] = new [] { gunMain };
+            gunConfigurations[1] = new [] { gunLeft, gunRight };
         }
         if (gunLeft && gunMain && gunRight)
         {

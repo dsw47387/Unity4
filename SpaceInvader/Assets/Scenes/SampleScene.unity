@@ -381,7 +381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2071764978, guid: dc22dd493163e9a4cbcbffaedcf4a818, type: 3}
       propertyPath: gunAmount
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2202101342703362272, guid: dc22dd493163e9a4cbcbffaedcf4a818, type: 3}
       propertyPath: m_RootOrder
